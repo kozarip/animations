@@ -64,7 +64,7 @@ function App() {
     const filter = document.querySelector(".filter")
     const firstPageElements = document.querySelectorAll(".firstPage > section")
     const secondPage = document.querySelector(".secondPage")
-    const img = "http://localhost:3000/static/media/stones.7b2ed8d7aeace4fad9e4.jpg"
+    const img = "/static/media/stones.7b2ed8d7aeace4fad9e4.jpg"
     selected.style.zIndex = 99;
     selected.style.backgroundImage = `url(${img})`;
     selected.style.top = element.style.top
@@ -88,13 +88,13 @@ function App() {
     <div className="App">
       <div className='firstPage page'>
         <section className="section section-1" onClick={move2Up}></section>
-        <section className="section section-2" onClick={move2Up}></section>
+        <section className="section section-2" onClick={move2Up}>Click here!</section>
         <section className="section section-3" onClick={move2Up}></section>
         <div className='section selected'></div>
         <div className='filter'></div>
         <div className="secondPage page">
-          <h3>Második oldal</h3>
-          <div className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          <h3>Second Page</h3>
+          <div className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br /><br /> <p>Scroll Down!</p></div>
         </div>
       </div>
       <div className="thirdPage page">
