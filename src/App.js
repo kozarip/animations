@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 const testImage1 = require("./images/1.jpg")
 const testImage2 = require("./images/2.jpg")
-const testImage3 = require("./images/3.jpeg")
+const testImage3 = require("./images/3.jpg")
 
 function App() {
   const images = [testImage1, testImage2, testImage3]
