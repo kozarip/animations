@@ -25,7 +25,7 @@ function App() {
         currentImageNumber = 0
       }
       setCurrentImage(images[currentImageNumber])
-    }, 4500)
+    }, 4000)
 
     //circle images
     const t3 = gsap.timeline({ repeat: -1, delay: 2 });
